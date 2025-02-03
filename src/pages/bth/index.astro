@@ -1,0 +1,13 @@
+---
+import sw from "@content/bth/software.yml";
+
+import BTHLayout from "@layouts/BTHLayout.astro";
+
+import Project from "@components/bth/Project.astro";
+import Herramientas from "@components/bth/Herramientas.astro";
+---
+
+<BTHLayout title="BTH San Julian">
+  <Project title="PROYECTOS" projects={[]} />
+  <Herramientas title="HERRAMIENTAS" apps={sw.apps} />
+</BTHLayout>

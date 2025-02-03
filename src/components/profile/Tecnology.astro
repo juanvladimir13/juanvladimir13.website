@@ -1,0 +1,37 @@
+---
+const { title, badges } = Astro.props;
+---
+
+<div class="container">
+  <p>{title}</p>
+
+  <div class="badges">
+    {
+      badges.map(({ title, image, url }) => (
+        <a href={url}>
+          <img src={image} loading="lazy" alt={title} />
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .container {
+    padding: 0px var(--padding-sm);
+  }
+
+  .container > p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: var(--green-950);
+    font-size: var(--text-18);
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  .container > hr {
+    margin: 2px 0px 5px;
+    color: var(--divider);
+  }
+</style>

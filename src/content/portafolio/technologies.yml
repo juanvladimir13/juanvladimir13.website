@@ -1,0 +1,73 @@
+technologies:
+  - title: Frontend
+    badges:
+      - title: Angular
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/angular.svg
+        badge: "https://img.shields.io/badge/Angular-d32f2f?style=for-the-badge&logo=angular&logoColor=white"
+        url: "https://angular.io/"
+      - title: React
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/react.svg
+        badge: "https://img.shields.io/badge/react-087EA4?style=for-the-badge&logo=react&logoColor=white"
+        url: "https://react.dev/"
+      - title: Astro
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/astro.svg
+        badge: "https://img.shields.io/badge/astro-black?style=for-the-badge&logo=astro&logoColor=white"
+        url: "https://astro.build/"
+  - title: Backend
+    badges:
+      - title: Next.js
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/nextjs.svg
+        badge: "https://img.shields.io/badge/next.js-000?style=for-the-badge&logo=javascript&logoColor=white"
+        url: "https://nextjs.org/"
+  - title: Base de Datos
+    badges:
+      - title: Sqlite
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/sqlite.svg
+        badge: "https://img.shields.io/badge/Sqlite-044a64?style=for-the-badge&logo=sqlite&logoColor=white"
+        url: "https://www.sqlite.org/"
+      - title: PostgreSQL
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/postgres.svg
+        badge: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"
+        url: "https://www.postgresql.org/"
+      - title: MariaDB
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/mariadb.svg
+        badge: "https://img.shields.io/badge/MariaDB-C0765A?style=for-the-badge&logo=mariadb&logoColor=white"
+        url: "https://mariadb.org/"
+      - title: Microsoft SQL Server
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/mssqlserver.svg
+        badge: "https://img.shields.io/badge/Microsoft_SQL_Server-0078d4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white"
+        url: "https://www.microsoft.com/en-us/sql-server/"
+      - title: MySQL
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/mysql.svg
+        badge: "https://img.shields.io/badge/MySQL-3E6E93?style=for-the-badge&logo=mysql&logoColor=white"
+        url: "https://www.mysql.com/"
+  - title: Lenguajes de programación
+    badges:
+      - title: PHP
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/php.svg
+        badge: "https://img.shields.io/badge/PHP-4F5B93?style=for-the-badge&logo=php&logoColor=white"
+        url: "https://php.net/"
+      - title: TypeScript
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/typescript.svg
+        badge: "https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white"
+        url: "https://typescriptlang.org/"
+      - title: JavaScript
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/javascript.svg
+        badge: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"
+        url: "https://tc39.es/ecma262/"
+      - title: Java
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/java.svg
+        badge: "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=oracle&logoColor=white"
+        url: "https://www.oracle.com/java/"
+      - title: Python
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/python.svg
+        badge: "https://img.shields.io/badge/Python-2b5b84?style=for-the-badge&logo=python&logoColor=white"
+        url: "https://www.python.org/"
+      - title: Rust
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/rust.svg
+        badge: "https://img.shields.io/badge/rust-ffc832?style=for-the-badge&logo=rust&logoColor=white"
+        url: "https://www.rust-lang.org/"
+      - title: Go
+        image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/languages/go.svg
+        badge: "https://img.shields.io/badge/go-5dc9e2?style=for-the-badge&logo=go&logoColor=white"
+        url: ""

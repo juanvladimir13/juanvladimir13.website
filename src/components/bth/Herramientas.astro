@@ -1,0 +1,14 @@
+---
+
+import Software from "@components/bth/Software.astro";
+
+const {title, apps} = Astro.props;
+---
+<div class="container-fluid">
+  <h3 class="sub-title">{title}</h3>
+  {
+    apps.map((categoria) => (
+      <Software categoria={categoria} />
+    ))
+  }
+</div>

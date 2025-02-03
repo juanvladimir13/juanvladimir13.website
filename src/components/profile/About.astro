@@ -1,0 +1,26 @@
+---
+const { aboutsme } = Astro.props;
+---
+
+<div class="container-fluid container">
+  <h2>Sobre mi</h2>
+  <ul>
+    {aboutsme.map((item) => <li>{item}</li>)}
+  </ul>
+</div>
+
+<style>
+  .container > h2 {
+    margin-bottom: 5px;
+    font-size: var(--text-17);
+    color: var(--green-950);
+    text-transform: uppercase;
+  }
+
+  .container > ul {
+    padding-left: var(--padding-sm);
+    font-size: var(--text-18);
+    line-height: 1.1;
+    color: var(--green-950);
+  }
+</style>

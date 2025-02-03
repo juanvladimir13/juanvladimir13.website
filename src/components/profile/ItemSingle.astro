@@ -1,0 +1,21 @@
+---
+const { title, content } = Astro.props;
+---
+<div class="item">
+  <span class="title">{title}</span>: <span>{content}</span>
+</div>
+<style>
+  .item {
+    font-size: var(--text-18);
+    padding: 0px var(--padding-sm);
+    line-height: 1.1;
+  }
+
+  span {
+    color: var(--green-950);
+  }
+
+  .title {
+    font-weight: 500;
+  }
+</style>

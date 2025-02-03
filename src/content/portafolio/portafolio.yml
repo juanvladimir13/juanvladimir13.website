@@ -1,0 +1,151 @@
+username: juanvladimir13
+name: Juan Vladimir
+nombres: Juan Vladimir
+apellidos: Ramirez Flores
+image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/me/profile.jpg
+redessociales:
+  - username: juanvladimir13@gmail.com
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/gmail.png"
+    url: "mailto:juanvladimir13@gmail.com"
+  - username: "+59171686105"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330947/icon/whatsapp.png"
+    url: "https://wa.me/+59171686105"
+  - username: "juanvladimir13"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/github.png"
+    url: "https://github.com/juanvladimir13"
+  - username: "juanvladimir13"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/facebook.png"
+    url: "https://www.facebook.com/juanvladimir13"
+datospersonales:
+  - title: Identificación
+    content: "Juan Vladimir Ramírez Flores, 26/12/1987, Potosí – Bolivia"
+  - title: Dirección
+    content: "Santa Cruz - San Julián, Barrio Cafeces, intersección Av. Libertad y Av. Santa Cruz"
+about: "Software Engineer ▪︎ Developer Full-Stack ▪︎ I Teach Programming ▪︎ Linux User ▪︎ Geek & Hacker ▪︎ Associate Professor at UAGRM"
+aboutsme:
+  - 🎓 Software Engineer
+  - 👨🏻‍💻 Developer Full-Stack
+  - ♥️ I programmed happily with PHP, TypeScript, Java, Python, Angular, React, Next.js and Astro
+  - 🐧 Linux User
+  - 👨🏻‍🏫 Associate Professor at UAGRM
+  - 🎬 EduTuber about web programming
+  - 🎸 I love singing and playing guitar
+  - 🧳 I love to travel
+educacion:
+  - title: "UPEA | Universidad Pública de El Alto"
+    data:
+      - "2024 – Diplomado en Educación Superior Basado en Competencias"
+  - title: "UAGRM | Escuela de Postgrado | UAGRM school of engineering"
+    data:
+      - "2023 – Diplomado en DevOps Essentials"
+  - title: "UAGRM | Universidad Autónoma Gabriel René Moreno"
+    data:
+      - "2020 – Licenciado en Ingeniería en Informática"
+      - "2019 – Técnico universitario medio en programación y diseño de páginas web"
+experiencia:
+  - title: "UAGRM | Fac. de Ing. de Ciencias de la Computación y Telecomunicaciones"
+    data:
+    - "2024 – Taller de Técnico Medio de Programación y Diseño de Páginas Web (180 hrs)"
+    - "2023 – Curso Delphi Básico (20 hrs)"
+    - "2022 – Curso PHP vanilla (20 hrs)"
+    - "2022 – Curso Python vanilla (20 hrs)"
+  - title: "Núcleo Linux UAGRM | Comunidad de software libre UAGRM"
+    data:
+    - "2022 – Curso de introducción a GNU/Linux (10 hrs)"
+    - "2022 – Taller de desarrollo web con python utilizando Flask (15 hrs)"
+    - "2021 – Taller de desarrollo web con java utilizando JSP Servlet (20 hrs)"
+    - "2020 – Curso de patrones de diseño de software (15 hrs)"
+  - title: "Núcleo Linux Bolivia | Comunidad de software libre Bolivia"
+    data:
+    - "2021 – Taller de introducción al desarrollo de software con JAVA (10 hrs)"
+    - "2020 – Curso de desarrollo web con PHP sin framework (20 hrs)"
+    - "2020 – Taller de introducción al desarrollo de software con PYTHON (15 hrs)"
+cursos:
+  - title: "Dev/Talles | Plataforma Educativa"
+    data:
+    - "2024 – React Native: Aplicaciones nativas para IOS y Android (33 horas)"
+    - "2024 – Angular avanzado (32 horas)"
+    - "2024 – React de cero a experto (54 horas)"
+    - "2023 – React PRO (28 horas)"
+    - "2023 – Next.js (37 horas)"
+    - "2022 – Node.js de cero a experto (37 horas)"
+  - title: "UDEMY | Plataforma Educativa"
+    data:
+    - "2024 – Angular de cero a experto (45 horas)"
+    - "2024 – Flutter Web – Aplicaciones y Web profesionales (21 horas)"
+    - "2022 – Aplicaciones Web Progresivas (14 horas)"
+    - "2022 – REDUX en angular con NGRX (12 horas)"
+  - title: "UAGRM | Fac. de Ing. de Ciencias de la Computación y Telecomunicaciones"
+    data:
+    - "2022 – Diseño y programación de páginas web (128 horas)"
+    - "2013 – PostgreSQL Básico (40 horas)"
+    - "2008 – Delphi Avanzado (20 horas)"
+    - "2007 – Delphi Básico (20 horas)"
+    - "2019 – Linux Professional Institute | Instituto internacional"
+    - "2019 – NDG Linux Essentials (40 horas)"
+projects:
+  - title: "Traslado de paquetes mediante el uso de motocicletas"
+    description: "Control y registro de entrega de paquetes de mensajería"
+    tecnologies:
+    - c++
+    - mysql
+    url: '#'
+    github: '#'
+  - title: "Gestión de producción de pollos parrilleros"
+    description: "Control de producción, almacén, recursos humanos, programas de crianza y comercialización de pollos parrilleros"
+    tecnologies:
+    - python
+    - django
+    - mysql
+    url: '#'
+    github: '#'
+  - title: "Generación de facturas electrónicas de un comercio"
+    description: "Generación de facturas de acuerdo a normas ley establecidas"
+    tecnologies:
+    - lua
+    - python
+    - c
+    - php
+    url: '#'
+    github: '#'
+  - title: "Control de cultivo hidropónico casero de lechuga utilizando IOT"
+    description: "Plataforma web IOT en el control de cultivos caseros"
+    tecnologies:
+    - django
+    - postgres
+    - arduino
+    url: '#'
+    github: '#'
+expociencia:
+  - title: "Lecturador inteligente de servicio de agua potable"
+    description: "Medidor de agua electrónico y plataforma web de control de consumo de agua potable"
+    tecnologies:
+    - python
+    - django
+    - arduino
+    - java
+    url: '#'
+    github: '#'
+  - title: "Parqueo automático"
+    description: "Control electrónico de parqueo de autos"
+    tecnologies:
+    - python
+    - django
+    - arduino
+    url: '#'
+    github: '#'
+  - title: "Sistema Operativo FICCT-OS"
+    description: "Implementación de una distribución GNU/Linux con entornos de desarrollo preinstalado destinado a los estudiantes de la FICCT"
+    tecnologies:
+    - java
+    - shell
+    - c
+    url: '#'
+    github: '#'
+extra:
+  comunidades:
+  - GDG
+  - Nucleo Linux Bolivia
+  - Nucleo Linux UAGRM
+  - Assuresoft
+  - JalaSoft

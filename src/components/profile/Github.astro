@@ -1,0 +1,115 @@
+---
+const { nombres, apellidos, image, redessociales } = Astro.props;
+---
+<div class="card-user">
+  <div class="card-contact">
+    <h2>{apellidos} <br /> {nombres}</h2>
+    <div class="card-network">
+      {
+        redessociales.map(({ username, icon, url }) => (
+          <a href={url} target="_blank">
+            <img src={icon} alt="i" />
+            {username}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+  <picture class="card-avatar">
+    <img src={image} loading="lazy" alt="user" srcset="" />
+  </picture>
+</div>
+
+<style>
+  .card-user {
+    padding: 0px var(--padding-sm);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-contact > h2 {
+    margin-bottom: 5px;
+    font-size: var(--text-22);
+    line-height: 1.0;
+    color: var(--green-950);
+  }
+
+  .card-network > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--text-15);
+    color: var(--green-50);
+  }
+
+  .card-network > a > img {
+    width: 26px;
+  }
+
+  .card-avatar {
+    width: fit-content;
+    min-width: 120px;
+    max-width: 120px;
+    justify-self: center;
+    text-align: end;
+  }
+
+  .card-avatar > img {
+    border-radius: 50%;
+    width: 120px;
+  }
+
+  @media screen and (min-width: 576px) {
+    .card-contact {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-sm);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .card-user {
+      padding: 3px var(--padding-md);
+    }
+
+    .card-contact {
+      width: 85%;
+      max-width: 85%;
+    }
+
+    .card-contact > h2 {
+      color: var(--primary-color);
+      width: 30%;
+      margin-bottom: 0px;
+    }
+
+    .card-network {
+      width: 70%;
+      display: grid;
+      grid-template-columns: 0.7fr 1fr;
+      row-gap: 0px;
+      column-gap: 0px;
+    }
+
+    .card-avatar {
+      width: 15%;
+      max-width: 15%;
+    }
+  }
+
+  @media screen and (min-width: 993px) {
+    .card-user {
+      padding: 3px var(--padding-lg);
+    }
+  }
+
+  @media screen and (min-width: 1201px) {
+    .card-user {
+      margin: 0px auto;
+      max-width: var(--width-md);
+      padding: 0px var(--padding-xl);
+    }
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="container-fluid container">
+  <h3>{title}</h3>
+  <slot />
+</div>
+
+<style>
+  .container > h3 {
+    color: var(--green-950);
+    text-transform: uppercase;
+    font-size: var(--text-17);
+  }
+</style>

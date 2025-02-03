@@ -1,0 +1,100 @@
+---
+import Resume from "./Resume.astro";
+const { name, username, about, image } = Astro.props;
+---
+
+<div class="container-fluid container">
+  <div class="card">
+    <div class="user">
+      <picture>
+        <img src={image} loading="lazy" alt="user" />
+      </picture>
+      <h1><span>{name}</span><span>{username}</span></h1>
+    </div>
+    <p class="description">{about}</p>
+  </div>
+
+  <Resume />
+</div>
+
+<style>
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .user {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-sm);
+  }
+
+  .user > picture > img {
+    width: 90px;
+    border-radius: 50%;
+  }
+
+  .user > h1 {
+    line-height: 1;
+  }
+
+  .user > h1 > span:nth-child(1) {
+    color: var(--green-950);
+    display: block;
+    font-size: var(--text-22);
+    font-weight: 500;
+  }
+
+  .user > h1 > span:nth-child(2) {
+    color: var(--green-900);
+    display: block;
+    font-size: var(--text-base);
+    font-weight: 400;
+  }
+
+  .description {
+    padding: 0px var(--padding-sm);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--green-950);
+    font-size: var(--text-16);
+    line-height: 1;
+    text-align: center;
+  }
+
+
+  @media screen and (min-width: 576px) {
+    .card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .user {
+      padding-right: 0px;
+      width: 175px;
+      max-width: 175px;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .description {
+      max-width: calc(100vw - (220px));
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .user {
+      padding: 0px;
+      width: 200px;
+      max-width: 200px;
+    }
+
+    .description {
+      padding: 0px;
+      width: 100%;
+      max-width: calc(100vw - 290px);
+    }
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+const { title, data } = Astro.props;
+const [principal, _] = title.split("|");
+const complement = title.substring(title.indexOf("|"));
+---
+
+<div class="item">
+  <p><strong>{principal}</strong> {complement}</p>
+  <hr />
+  <div>
+    {data.map((item) => <p>{item}</p>)}
+  </div>
+</div>
+
+<style>
+  .item {
+    padding: 3px var(--padding-sm);
+    color: var(--green-950);
+  }
+
+  .item > hr {
+    margin: 2px 0px 5px;
+    color: var(--divider-color);
+  }
+
+  .item > p {
+    font-size: var(--text-18);
+    line-height: 1;
+  }
+
+  .item > div > p {
+    padding: 0px 10px;
+    font-size: var(--text-18);
+    line-height: 1.1;
+  }
+</style>

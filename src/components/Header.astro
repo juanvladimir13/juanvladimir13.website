@@ -1,0 +1,72 @@
+<header>
+  <nav>
+    <a class="navbar-brand" href="/">@juanvladimir13</a>
+    <ul>
+      <li><a href="/bth/">BTH</a></li>
+      <li><a href="/bth/consulta">Consultas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    padding: 0px var(--padding-sm);
+    background-color: var(--green-600);
+  }
+
+  nav {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav > a {
+    color: var(--green-100);
+    font-size: var(--text-19);
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul > li > a {
+    color: var(--green-200);
+    padding: 5px 5px;
+    font-size: var(--text-17);
+    line-height: 1;
+  }
+
+  ul > li > a:hover {
+    color: var(--green-900);
+    background-color: var(--green-200);
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: 576px) {
+  }
+
+  @media screen and (min-width: 769px) {
+    /*header {
+      padding: 3px var(--padding-md);
+    }*/
+
+    nav {
+      height: 56px;
+    }
+
+    nav > a,
+    ul > li > a {
+      font-size: var(--text-18);
+    }
+  }
+
+  @media screen and (min-width: 993px) {
+    /*header {
+      padding: 3px var(--padding-lg);
+    }*/
+  }
+</style>
