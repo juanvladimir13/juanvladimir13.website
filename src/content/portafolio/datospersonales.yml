@@ -1,0 +1,33 @@
+username: juanvladimir13
+name: Juan Vladimir
+nombres: Juan Vladimir
+apellidos: Ramirez Flores
+image: https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/me/profile.jpg
+redessociales:
+  - username: juanvladimir13@gmail.com
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/gmail.png"
+    url: "mailto:juanvladimir13@gmail.com"
+  - username: "+59171686105"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330947/icon/whatsapp.png"
+    url: "https://wa.me/+59171686105"
+  - username: "juanvladimir13"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/github.png"
+    url: "https://github.com/juanvladimir13"
+  - username: "juanvladimir13"
+    icon: "https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/facebook.png"
+    url: "https://www.facebook.com/juanvladimir13"
+datospersonales:
+  - title: Identificación
+    content: "Juan Vladimir Ramírez Flores"
+  - title: Dirección
+    content: "Santa Cruz - San Julián, Barrio Cafeces, intersección Av. Libertad y Av. Santa Cruz"
+about: "Software Engineer ▪︎ I Teach Programming ▪︎ Geek & Hacker ▪︎ Associate Professor at UAGRM ▪︎ Linux User"
+aboutsme:
+  - 🎓 Software Engineer
+  - 👨🏻‍💻 Developer Full-Stack
+  - ♥️ I programmed happily with PHP, TypeScript, Java, Python, Angular, React, Next.js and Astro
+  - 🐧 Linux User
+  - 👨🏻‍🏫 Associate Professor at UAGRM
+  - 🎬 EduTuber about web programming
+  - 🎸 I love singing and playing guitar
+  - 🧳 I love to travel

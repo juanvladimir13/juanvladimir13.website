@@ -1,0 +1,30 @@
+---
+import RecursoApoyo from "@components/bth/RecursoApoyo.astro";
+
+const { title, contents } = Astro.props;
+---
+
+<div class="bg-container">
+  <h3 class="sub-title" style="margin-bottom: 5px;">{title}</h3>
+  {
+    contents.map(({ title, description, tecnologies, url, github }) => (
+      <RecursoApoyo
+        title={title}
+        description={description}
+        tecnologies={tecnologies}
+        url={url}
+        github={github}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .bg-container {
+    background-color: var(--green-100);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--green-600);
+  }
+</style>

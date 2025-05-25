@@ -1,0 +1,20 @@
+---
+import Project from "./Project.astro";
+
+const { title, datas } = Astro.props;
+---
+
+<div class="container-fluid">
+  <h3 class="card-title">{title}</h3>
+  {
+    datas.map(({ title, description, tecnologies, url = "", github = "" }) => (
+      <Project
+        title={title}
+        description={description}
+        tecnologies={tecnologies}
+        url={url}
+        github={github}
+      />
+    ))
+  }
+</div>

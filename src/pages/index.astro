@@ -1,100 +1,57 @@
 ---
-import cv from "@content/portafolio/portafolio.yml";
-import tech from "@content/portafolio/technologies.yml";
-
 import PortafolioLayout from "@layouts/PortafolioLayout.astro";
 
-import ItemSingle from "@components/profile/ItemSingle.astro";
-import ItemComposite from "@components/profile/ItemComposite.astro";
-import Card from "@components/profile/Card.astro";
+import datospersonales from "@content/portafolio/datospersonales.yml";
+import educacion from "@content/portafolio/educacion.yml";
+import experiencia from "@content/portafolio/experiencia.yml";
+import cursos from "@content/portafolio/cursos.yml";
+import projects from "@content/portafolio/proyectos.yml";
+import expociencia from "@content/portafolio/expociencia.yml";
+import tech from "@content/portafolio/technologies.yml";
+
 import Contact from "@components/profile/Contact.astro";
 
 import User from "@components/profile/User.astro";
 import About from "@components/profile/About.astro";
-import Tecnology from "@components/profile/Tecnology.astro";
-import Project from "@components/profile/Project.astro";
+import CardSingle from "@components/profile/CardSingle.astro";
+import CardComposite from "@components/profile/CardComposite.astro";
+import CardTecnology from "@components/profile/CardTecnology.astro";
+import CardProject from "@components/profile/CardProject.astro";
 ---
 
 <PortafolioLayout title="Juan Vladimir | Portafolio">
-  <Contact redessociales={cv.redessociales} />
+  <Contact redessociales={datospersonales.redessociales} />
   <User
-    image={cv.image}
-    name={cv.name}
-    username={cv.username}
-    about={cv.about}
+    image={datospersonales.image}
+    name={datospersonales.name}
+    username={datospersonales.username}
+    about={datospersonales.about}
   />
 
-  <Card title="Datos personales">
-    {
-      cv.datospersonales.map(({ title, content }) => (
-        <ItemSingle title={title} content={content} />
-      ))
-    }
-  </Card>
+  <CardSingle
+    title="Datos personales"
+    datas={datospersonales.datospersonales}
+  />
 
-  <About aboutsme={cv.aboutsme} />
+  <About aboutsme={datospersonales.aboutsme} />
 
-  <Card title="Educación">
-    {
-      cv.educacion.map(({ title, data }) => (
-        <ItemComposite title={title} data={data} />
-      ))
-    }
-  </Card>
+  <CardComposite title="Educación" datas={educacion.educacion} />
 
-  <Card title="Experiencia como docente">
-    {
-      cv.experiencia.map(({ title, data }) => (
-        <ItemComposite title={title} data={data} />
-      ))
-    }
-  </Card>
+  <CardComposite
+    title="Experiencia como docente"
+    datas={experiencia.experiencia}
+  />
+  <CardComposite title="Cursos" datas={cursos.cursos} />
 
-  <Card title="Cursos">
-    {
-      cv.cursos.map(({ title, data }) => (
-        <ItemComposite title={title} data={data} />
-      ))
-    }
-  </Card>
+  <CardProject title="Proyectos" datas={projects.projects} />
 
-  <Card title="Proyectos">
-    {
-      cv.projects.map(
-        ({ title, description, tecnologies, url = "", github = "" }) => (
-          <Project
-            title={title}
-            description={description}
-            tecnologies={tecnologies}
-            url={url}
-            github={github}
-          />
-        ),
-      )
-    }
-  </Card>
+  <CardProject
+    title="Participación en ferias científicas UAGRM - FICCT"
+    datas={expociencia.expociencia}
+  />
 
-  <Card title="Participación en ferias científicas UAGRM - FICCT">
-    {
-      cv.expociencia.map(
-        ({ title, description, tecnologies, url = "", github = "" }) => (
-          <Project
-            title={title}
-            description={description}
-            tecnologies={tecnologies}
-            url={url}
-            github={github}
-          />
-        ),
-      )
-    }
-  </Card>
-
-  <Card title="Habilidades en Tecnologías">
-    {
-      tech.technologies.map(({ title, badges }) => (
-        <Tecnology title={title} badges={badges} />
-      ))
-    }
-  </Card>
+  <CardTecnology
+    title="Habilidades en Tecnologías"
+    contents={tech.technologies}
+  />
 </PortafolioLayout>

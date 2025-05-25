@@ -1,0 +1,26 @@
+expociencia:
+  - title: "Lecturador inteligente de servicio de agua potable"
+    description: "Medidor de agua electrónico y plataforma web de control de consumo de agua potable"
+    tecnologies:
+    - python
+    - django
+    - arduino
+    - java
+    url: '#'
+    github: '#'
+  - title: "Parqueo automático"
+    description: "Control electrónico de parqueo de autos"
+    tecnologies:
+    - python
+    - django
+    - arduino
+    url: '#'
+    github: '#'
+  - title: "Sistema Operativo FICCT-OS"
+    description: "Implementación de una distribución GNU/Linux con entornos de desarrollo preinstalado destinado a los estudiantes de la FICCT"
+    tecnologies:
+    - java
+    - shell
+    - c
+    url: '#'
+    github: '#'

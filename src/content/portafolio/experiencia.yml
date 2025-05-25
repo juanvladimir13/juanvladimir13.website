@@ -1,0 +1,18 @@
+experiencia:
+  - title: "UAGRM | Fac. de Ing. de Ciencias de la Computación y Telecomunicaciones"
+    data:
+    - "2024 – Taller de Técnico Medio de Programación y Diseño de Páginas Web"
+    - "2023 – Curso Delphi básico"
+    - "2022 – Curso PHP vanilla"
+    - "2022 – Curso Python vanilla"
+  - title: "Núcleo Linux UAGRM | Comunidad de Software Libre UAGRM"
+    data:
+    - "2022 – Curso de introducción a GNU/Linux"
+    - "2022 – Curso de Python utilizando Flask"
+    - "2021 – Curso de Java utilizando JSP Servlet"
+    - "2020 – Curso de Patrones de Diseño de Software"
+  - title: "Núcleo Linux Bolivia | Comunidad de Software Libre Bolivia"
+    data:
+    - "2021 – Curso de introducción al desarrollo de software con Java"
+    - "2020 – Curso de desarrollo web con PHP vanilla"
+    - "2020 – Taller de introducción al desarrollo de software con Python"

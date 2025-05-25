@@ -1,5 +1,74 @@
 apps:
     - categoria:
+      name: Programación
+      software:
+      - name: Bun
+        description: "Develop, test, run, and bundle JavaScript & TypeScript projects—all with Bun, runtime & toolkit designed for speed"
+        download: "https://bun.sh/docs/installation"
+        img: ""
+      - name: Deno
+        description: "Is the open-source JavaScript runtime for the modern web"
+        download: "https://deno.com/"
+        img: ""
+      - name: PseInt
+        description: "Herramienta para asistir a un estudiante en sus primeros pasos"
+        download: "https://pseint.sourceforge.net/index.php?page=descargas.php"
+        img: ""
+      - name: Lazarus
+        description: "IDE for Rapid Application Development"
+        download: "https://www.lazarus-ide.org/index.php?page=downloads"
+        img: ""
+    - categoria:
+      name: Desarrollo web
+      software:
+      - name: Visual Studio Code
+        description: "Code Editing. Redefined"
+        download: "https://code.visualstudio.com/download"
+        img: ""
+      - name: Lunacy
+        description: "Free design software that keeps your flow with AI tools and built-in graphics"
+        download: "https://icons8.com/lunacy"
+        img: ""
+      - name: PHP
+        description: "Language that is especially suited to web development"
+        download: "https://www.php.net/downloads"
+        img: ""
+      - name: Typescript
+        description: "Strongly typed programming language that builds on JavaScript, giving you better tooling at any scale"
+        download: "https://www.typescriptlang.org/download/"
+        img: ""
+      - name: Python
+        description: "A programming language that lets you work quickly"
+        download: "https://www.python.org/downloads/windows/"
+        img: ""
+      - name: Google Chrome
+        description: "The browser built to be yours"
+        download: "https://www.google.com/chrome/"
+        img: ""
+      - name: Firefox Developer Edition
+        description: "Development tools you need to build for the open web"
+        download: "https://www.mozilla.org/en-US/firefox/developer/"
+        img: ""
+      - name: git
+        description: "Distributed version control system"
+        download: "https://git-scm.com/download/win"
+        img: ""
+    - categoria:
+      name: Base de datos
+      software:
+      - name: SQLite
+        description: "SQLite is the most used database engine in the world"
+        download: "https://www.sqlite.org/download.html"
+        img: ""
+      - name: DB Browser for SQLite
+        description: "Database Browser"
+        download: "https://sqlitebrowser.org/dl/"
+        img: ""
+      - name: Umbrello
+        description: "Modeller is a Unified Modelling Language (UML)"
+        download: "https://uml.sourceforge.io/installation.php#install-windows"
+        img: ""
+    - categoria:
       name: Diseño gráfico
       software:
       - name: GIMP
@@ -28,69 +97,4 @@ apps:
       - name: Vim
         description: "A highly configurable built to make creating"
         download: "https://www.vim.org/download.php"
-        img: ""
-    - categoria:
-      name: Programacion
-      software:
-      - name: PseInt
-        description: "Herramienta para asistir a un estudiante en sus primeros pasos"
-        download: "https://pseint.sourceforge.net/index.php?page=descargas.php"
-        img: ""
-      - name: Lazarus
-        description: "IDE for Rapid Application Development"
-        download: "https://www.lazarus-ide.org/index.php?page=downloads"
-        img: ""
-      - name: Deno
-        description: "Is the open-source JavaScript runtime for the modern web"
-        download: "https://deno.com/"
-        img: ""
-    - categoria:
-      name: Desarrollo web
-      software:
-      - name: Visual Studio Code
-        description: "Code Editing. Redefined"
-        download: "https://code.visualstudio.com/download"
-        img: ""
-      - name: Lunacy
-        description: "Free design software that keeps your flow with AI tools and built-in graphics"
-        download: "https://icons8.com/lunacy"
-        img: ""
-      - name: PHP
-        description: "Language that is especially suited to web development"
-        download: "https://www.php.net/downloads"
-        img: ""
-      - name: Python
-        description: "A programming language that lets you work quickly"
-        download: "https://www.python.org/downloads/windows/"
-        img: ""
-      - name: Node
-        description: "Cross-platform JavaScript runtime environment"
-        download: "https://nodejs.org/en/download/prebuilt-installer"
-        img: ""
-      - name: Google Chrome
-        description: "The browser built to be yours"
-        download: "https://www.google.com/chrome/"
-        img: ""
-      - name: Firefox Developer Edition
-        description: "Development tools you need to build for the open web"
-        download: "https://www.mozilla.org/en-US/firefox/developer/"
-        img: ""
-      - name: git
-        description: "Distributed version control system"
-        download: "https://git-scm.com/download/win"
-        img: ""
-    - categoria:
-      name: Base de datos
-      software:
-      - name: SQLite
-        description: "SQLite is the most used database engine in the world"
-        download: "https://www.sqlite.org/download.html"
-        img: ""
-      - name: DB Browser for SQLite
-        description: "Database Browser"
-        download: "https://sqlitebrowser.org/dl/"
-        img: ""
-      - name: Umbrello
-        description: "Modeller is a Unified Modelling Language (UML)"
-        download: "https://uml.sourceforge.io/installation.php#install-windows"
         img: ""

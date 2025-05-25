@@ -1,0 +1,33 @@
+projects:
+  - title: "Traslado de paquetes mediante el uso de motocicletas"
+    description: "Control y registro de entrega de paquetes de mensajería"
+    tecnologies:
+    - c++
+    - mysql
+    url: '#'
+    github: '#'
+  - title: "Gestión de producción de pollos parrilleros"
+    description: "Control de producción, almacén, recursos humanos, programas de crianza y comercialización de pollos parrilleros"
+    tecnologies:
+    - python
+    - django
+    - mysql
+    url: '#'
+    github: '#'
+  - title: "Generación de facturas electrónicas de un comercio"
+    description: "Generación de facturas de acuerdo a normas ley establecidas"
+    tecnologies:
+    - lua
+    - python
+    - c
+    - php
+    url: '#'
+    github: '#'
+  - title: "Control de cultivo hidropónico casero de lechuga utilizando IOT"
+    description: "Plataforma web IOT en el control de cultivos caseros"
+    tecnologies:
+    - django
+    - postgres
+    - arduino
+    url: '#'
+    github: '#'

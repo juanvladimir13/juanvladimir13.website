@@ -1,5 +1,5 @@
 ---
-const { title, data } = Astro.props;
+const { title, datas } = Astro.props;
 const [principal, _] = title.split("|");
 const complement = title.substring(title.indexOf("|"));
 ---
@@ -8,7 +8,7 @@ const complement = title.substring(title.indexOf("|"));
   <p><strong>{principal}</strong> {complement}</p>
   <hr />
   <div>
-    {data.map((item) => <p>{item}</p>)}
+    {datas.map((item) => <p>{item}</p>)}
   </div>
 </div>
 

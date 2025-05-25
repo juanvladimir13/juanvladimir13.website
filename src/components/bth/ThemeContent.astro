@@ -1,0 +1,38 @@
+---
+const { title, contents } = Astro.props;
+---
+<div class="bg-container">
+  <h3 class="sub-title">{title}</h3>
+  <ul>
+    {
+      contents.map((content) => (
+        <li>
+          <span>{content.title}</span>
+          <a href={content.path_file} download={content.donwload_name_file}>
+            <img src="/icons/download.svg" height="24" width="24" />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .bg-container {
+    background-color: var(--green-50);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--green-200);
+  }
+</style>

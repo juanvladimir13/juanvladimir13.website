@@ -1,0 +1,14 @@
+---
+import Tecnology from "./Tecnology.astro";
+
+const { title, contents } = Astro.props;
+---
+
+<div class="container-fluid">
+  <h3 class="card-title">{title}</h3>
+  {
+    contents.map(({ title, badges }) => (
+      <Tecnology title={title} badges={badges} />
+    ))
+  }
+</div>

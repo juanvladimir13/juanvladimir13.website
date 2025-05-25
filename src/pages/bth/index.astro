@@ -1,13 +1,23 @@
 ---
-import sw from "@content/bth/software.yml";
+import contents from "@content/bth/contenido.yml";
+import material from "@content/bth/material.yml";
 
 import BTHLayout from "@layouts/BTHLayout.astro";
 
-import Project from "@components/bth/Project.astro";
-import Herramientas from "@components/bth/Herramientas.astro";
+import ThemeContent from "@components/bth/ThemeContent.astro";
+import CardMaterial from "@components/profile/CardMaterial.astro";
 ---
 
-<BTHLayout title="BTH San Julian">
-  <Project title="PROYECTOS" projects={[]} />
-  <Herramientas title="HERRAMIENTAS" apps={sw.apps} />
+<BTHLayout title="BTH">
+  <div class="container-fluid">
+    <ThemeContent title="Contenido Base" contents={contents.shared} />
+
+    <ThemeContent title="Quinto" contents={contents.quinto} />
+
+    <ThemeContent title="Sexto" contents={contents.sexto} />
+
+    <ThemeContent title="Taller/Conferencia" contents={contents.conferencias} />
+
+    <CardMaterial title="Material de apoyo" contents={material.github} />
+  </div>
 </BTHLayout>

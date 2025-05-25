@@ -1,0 +1,23 @@
+cursos:
+  - title: "Dev/Talles | Plataforma Educativa"
+    data:
+    - "2024 – React Native: Aplicaciones nativas para IOS y Android"
+    - "2024 – Angular avanzado"
+    - "2024 – React de cero a experto"
+    - "2023 – React PRO"
+    - "2023 – Next.js"
+    - "2022 – Node.js de cero a experto"
+  - title: "UDEMY | Plataforma Educativa"
+    data:
+    - "2024 – Angular de cero a experto"
+    - "2024 – Flutter Web – Aplicaciones y Web profesionales"
+    - "2022 – Aplicaciones Web Progresivas"
+    - "2022 – REDUX en angular con NGRX"
+  - title: "UAGRM | Fac. de Ing. de Ciencias de la Computación y Telecomunicaciones"
+    data:
+    - "2022 – Diseño y programación de páginas web"
+    - "2013 – PostgreSQL Básico"
+    - "2008 – Delphi Avanzado"
+    - "2007 – Delphi Básico"
+    - "2019 – Linux Professional Institute | Instituto internacional"
+    - "2019 – NDG Linux Essentials | Cisco Networking Academy"

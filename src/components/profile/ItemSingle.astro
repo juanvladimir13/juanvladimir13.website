@@ -1,8 +1,8 @@
 ---
-const { title, content } = Astro.props;
+const { title, data } = Astro.props;
 ---
 <div class="item">
-  <span class="title">{title}</span>: <span>{content}</span>
+  <span class="title">{title}</span>: <span>{data}</span>
 </div>
 <style>
   .item {

@@ -1,0 +1,14 @@
+---
+import ItemSingle from "./ItemSingle.astro";
+
+const { title, datas } = Astro.props;
+---
+
+<div class="container-fluid">
+  <h3 class="card-title">{title}</h3>
+  {
+    datas.map(({ title, content }) => (
+      <ItemSingle title={title} data={content} />
+    ))
+  }
+</div>
