@@ -1,5 +1,12 @@
 ---
-const { title, description, tecnologies, url, github } = Astro.props;
+const {
+  title,
+  description,
+  tecnologies,
+  path_file,
+  github,
+  donwload_name_file,
+} = Astro.props;
 ---
 
 <div class="container">
@@ -13,17 +20,14 @@ const { title, description, tecnologies, url, github } = Astro.props;
 
   <div class="source">
     {
-      url && (
-        <a href={url} target="_blank">
-          <img
-            src="https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/github.png"
-            alt="icon"
-          />
+      (
+        <a href={path_file} target="_blank" download={donwload_name_file}>
+          <img src="/icons/download.svg" height="24" width="24" />
         </a>
       )
     }
     {
-      github && (
+      (
         <a href={github} target="_blank">
           <img
             src="https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/chrome.png"

@@ -1,19 +1,15 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
 import yaml from '@rollup/plugin-yaml';
-import path from "path";
-const __dirname = './';
 
 export default defineConfig({
   vite: {
     plugins: [yaml()],
-    resolve: {
-      alias: {
-        "@src": `${path.resolve('', "./src/")}`,
-        "@components": `${path.resolve(__dirname, "./src/components/")}`,
-        "@content": `${path.resolve(__dirname, "./src/content/")}`,
-        "@layouts": `${path.resolve(__dirname, "./src/layouts/")}`,
-        "@pages": `${path.resolve(__dirname, "./src/pages/")}`
-      },
-    }
   },
+  env: {
+    schema: {
+      API_URL: envField.string({ context: "client", access: "public", default: "example" }),
+      PORT: envField.number({ context: "client", access: "public", optional: true }),
+      API_SECRET: envField.string({ context: "server", access: "secret" }),
+    }
+  }
 });

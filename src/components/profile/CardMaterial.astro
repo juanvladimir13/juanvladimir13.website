@@ -7,12 +7,13 @@ const { title, contents } = Astro.props;
 <div class="bg-container">
   <h3 class="sub-title" style="margin-bottom: 5px;">{title}</h3>
   {
-    contents.map(({ title, description, tecnologies, url, github }) => (
+    contents.map(({ title, description, tecnologies, path_file, github, donwload_name_file }) => (
       <RecursoApoyo
         title={title}
         description={description}
         tecnologies={tecnologies}
-        url={url}
+        path_file={path_file}
+        donwload_name_file={donwload_name_file}
         github={github}
       />
     ))
