@@ -1,25 +1,22 @@
 ---
-import Resume from "./Resume.astro";
 const { name, username, about, image } = Astro.props;
 ---
 
-<div class="container-fluid container">
-  <div class="card">
-    <div class="user">
-      <picture>
-        <img src={image} loading="lazy" alt="user" />
-      </picture>
-      <h1><span>{name}</span><span>{username}</span></h1>
-    </div>
-    <p class="description">{about}</p>
+<div class="card">
+  <div class="user">
+    <picture>
+      <img src={image} loading="lazy" alt="user" />
+    </picture>
+    <h1><span>{name}</span><span>{username}</span></h1>
   </div>
-
-  <Resume />
+  <p class="description">{about}</p>
 </div>
 
 <style>
   .card {
-    margin-bottom: 10px;
+    margin-bottom: var(--gap-12);
+    max-width: var(--width-md);
+    padding: 0px var(--padding-sm);
   }
 
   .user {
@@ -27,7 +24,7 @@ const { name, username, about, image } = Astro.props;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--gap-sm);
+    gap: var(--gap-12);
   }
 
   .user > picture > img {
@@ -54,21 +51,21 @@ const { name, username, about, image } = Astro.props;
   }
 
   .description {
-    padding: 0px var(--padding-sm);
-    margin-top: 5px;
-    margin-bottom: 5px;
     color: var(--green-950);
     font-size: var(--fs-16);
     line-height: var(--lh-100);
     text-align: center;
+    margin-top: var(--gap-8);
   }
-
 
   @media screen and (min-width: 576px) {
     .card {
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin-bottom: 10px;
+      margin: 0px auto;
+      margin-bottom: var(--gap-12);
+      padding: 0px;
     }
 
     .user {
@@ -80,7 +77,8 @@ const { name, username, about, image } = Astro.props;
     }
 
     .description {
-      max-width: calc(100vw - (220px));
+      width: 50%;
+      margin-top: 0px;
     }
   }
 
@@ -93,8 +91,6 @@ const { name, username, about, image } = Astro.props;
 
     .description {
       padding: 0px;
-      width: 100%;
-      max-width: calc(100vw - 290px);
     }
   }
 </style>

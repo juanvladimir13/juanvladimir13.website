@@ -8,7 +8,7 @@ const complement = title.substring(title.indexOf("|"));
   <p><strong>{principal}</strong> {complement}</p>
   <hr />
   <div>
-    {datas.map((item) => <p>{item}</p>)}
+    {datas.map((item: string) => <p>{item}</p>)}
   </div>
 </div>
 
@@ -32,5 +32,11 @@ const complement = title.substring(title.indexOf("|"));
     padding: 0px 10px;
     font-size: var(--fs-16);
     line-height: var(--lh-100);
+  }
+
+  @media screen and (min-width: 768px) {
+    .item > div > p {
+      line-height: var(--lh-125);
+    }
   }
 </style>

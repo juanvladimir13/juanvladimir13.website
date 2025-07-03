@@ -130,9 +130,9 @@ span {
 }
 
 .container-fluid {
-  margin-top: 15px;
-  margin-bottom: 15px;
   padding: 0px var(--padding-sm);
+  max-width: var(--width-md);
+  margin-bottom: var(--gap-8);
 }
 
 .card-title {
@@ -141,22 +141,18 @@ span {
   font-size: var(--fs-18);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container-fluid {
-    padding: 3px var(--padding-md);
+    margin: 0px auto;
+    padding: 0px var(--padding-md);
+    margin-bottom: var(--gap-8);
   }
 }
 
 @media screen and (min-width: 993px) {
   .container-fluid {
-    padding: 3px var(--padding-lg);
+    padding: 0px;
   }
 }
 
-@media screen and (min-width: 1201px) {
-  .container-fluid {
-    margin: 15px auto;
-    max-width: var(--width-md);
-    padding: 0px var(--padding-xl);
-  }
-}
+@media screen and (min-width: 1201px) {}

@@ -11,20 +11,29 @@
 </div>
 
 <style>
-
-.resume {
+  .resume {
     text-align: center;
-    margin-bottom: 15px;
     color: var(--green-950);
+    margin-bottom: var(--gap-12);
+    max-width: var(--width-md);
+    padding: 0px var(--padding-sm);
   }
 
   .resume > p {
-    margin-bottom: 5px;
+    margin-bottom: var(--gap-4);
     font-size: var(--fs-18);
   }
 
   .resume > div > p {
     font-size: var(--fs-16);
     line-height: var(--lh-100);
+  }
+
+  @media screen and (min-width: 576px) {
+    .resume {
+      margin: 0px auto;
+      margin-bottom: var(--gap-12);
+      padding: 0px;
+    }
   }
 </style>

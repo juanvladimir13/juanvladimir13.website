@@ -1,28 +1,30 @@
 ---
+import type { IRedSocial } from "src/types/datatypes";
+
 const { redessociales } = Astro.props;
 ---
-<div class="container-fluid">
-  <div class="container">
-    {
-      redessociales.map(({ username, icon, url }) => (
-        <a href={url} target="_blank">
-          <img src={icon} alt="icon" />
-          {username}
-        </a>
-      ))
-    }
-  </div>
+
+<div class="contact">
+  {
+    redessociales.map(({ username, icon, url }: IRedSocial) => (
+      <a href={url} target="_blank">
+        <img src={icon} alt="icon" />
+        {username}
+      </a>
+    ))
+  }
 </div>
 
 <style>
-  .container {
+  .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px;
+    max-width: var(--width-md);
+    margin-bottom: var(--gap-12);
   }
 
-  .container > a {
+  .contact > a {
     display: flex;
     align-items: center;
     gap: var(--gap-4);
@@ -31,13 +33,21 @@ const { redessociales } = Astro.props;
     padding: 0px 5px;
   }
 
-  .container > a > img {
+  .contact > a > img {
     width: var(--icon-24);
   }
 
   @media screen and (min-width: 576px) {
-    .container {
+    .contact {
+      margin-bottom: var(--gap-12);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact {
       justify-content: space-between;
+      margin: 0px auto;
+      padding: 0px var(--padding-md);
     }
   }
 </style>

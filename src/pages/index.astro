@@ -9,24 +9,27 @@ import projects from "@content/portafolio/proyectos.yml";
 import expociencia from "@content/portafolio/expociencia.yml";
 import tech from "@content/portafolio/technologies.yml";
 
-import Contact from "@components/profile/Contact.astro";
-
-import User from "@components/profile/User.astro";
 import About from "@components/profile/About.astro";
 import CardSingle from "@components/profile/CardSingle.astro";
 import CardComposite from "@components/profile/CardComposite.astro";
 import CardTecnology from "@components/profile/CardTecnology.astro";
 import CardProject from "@components/profile/CardProject.astro";
+import Contact from "@components/profile/Contact.astro";
+import User from "@components/profile/User.astro";
+import Resume from "@components/profile/Resume.astro";
 ---
 
 <PortafolioLayout title="Juan Vladimir | Portafolio">
   <Contact redessociales={datospersonales.redessociales} />
+
   <User
     image={datospersonales.image}
     name={datospersonales.name}
     username={datospersonales.username}
     about={datospersonales.about}
   />
+
+  <Resume />
 
   <CardSingle
     title="Datos personales"
