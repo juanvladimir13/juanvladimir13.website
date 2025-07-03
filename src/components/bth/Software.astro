@@ -5,7 +5,7 @@ const {categoria} = Astro.props;
   <h2> {categoria.name} </h2>
   <hr />
 {categoria.software.map((software)=> (
-  
+
   <div class="software">
     <img src="/icons/bars.svg" height="24" width="24" alt="..." />
     <div>
@@ -23,7 +23,7 @@ const {categoria} = Astro.props;
   .software {
     display: grid;
     grid-template-columns: 10% 75% 15%;
-    column-gap: 10px;
+    column-gap: var(--gap-12);
     align-items: center;
   }
 
@@ -37,20 +37,20 @@ const {categoria} = Astro.props;
 
   h4 {
     color: var(--green-950);
-    font-size: var(--text-base);
-    font-weight: 500;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-500);
   }
 
   h2 {
     margin-top: 3px;
     color: var(--green-950);
-    font-size: var(--text-base);
-    font-weight: 500;
+    font-size: var(--text-16);
+    font-weight: var(--fw-500);
   }
 
   p {
-    font-size: var(--text-base);
-    line-height: 1;
+    font-size: var(--text-16);
+    line-height: var(--lh-100);
     color: var(--green-950);
     margin-bottom: 3px;
   }

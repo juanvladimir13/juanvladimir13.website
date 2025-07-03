@@ -10,13 +10,13 @@ const { title, description, tecnologies, url, github } = Astro.props;
       {tecnologies.map((item) => <span class="badge">{item}</span>)}
     </div>
     <div class="source">
-      { github && 
+      { github &&
         <a href={github}>
           <img src="https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/chrome.png" alt="icon" />
         </a>
       }
-      
-      { url && 
+
+      { url &&
         <a href={url}>
           <img src="https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/github.png" alt="icon" />
         </a>
@@ -32,21 +32,21 @@ const { title, description, tecnologies, url, github } = Astro.props;
   }
 
   .title {
-    font-size: var(--text-18);
-    font-weight: 500;
-    line-height: 1;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-500);
+    line-height: var(--lh-100);
     margin-bottom: 2px;
   }
 
   .description {
-    font-size: var(--text-17);
-    line-height: 1;
+    font-size: var(--fs-16);
+    line-height: var(--lh-100);
   }
 
   .tecnologies {
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: var(--gap-4);
     text-align: center;
     margin: 5px 0px;
     print-color-adjust: exact;
@@ -57,9 +57,9 @@ const { title, description, tecnologies, url, github } = Astro.props;
     border-radius: 8px;
     background-color: var(--green-700);
     color: var(--green-50);
-    font-size: var(--text-14);
-    font-weight: 500;
-    line-height: 1;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-500);
+    line-height: var(--lh-100);
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
@@ -67,11 +67,11 @@ const { title, description, tecnologies, url, github } = Astro.props;
   .source {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: var(--gap-4);
   }
 
   .source > a > img {
-    width: 32px;
+    width: var(--icon-32);
   }
 
   .project {
