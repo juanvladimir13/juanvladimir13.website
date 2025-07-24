@@ -31,15 +31,22 @@ const { redessociales } = Astro.props;
     font-size: var(--fs-14);
     color: var(--green-950);
     padding: 0px 5px;
+    cursor: pointer;
   }
 
   .contact > a > img {
     width: var(--icon-24);
   }
 
+  .contact > a:hover {
+    color: var(--green-950);
+    background-color: var(--green-100);
+  }
+
   @media screen and (min-width: 576px) {
-    .contact {
-      margin-bottom: var(--gap-12);
+    .contact > a {
+      padding: 3px 16px;
+      border-radius: 8px;
     }
   }
 
@@ -48,6 +55,7 @@ const { redessociales } = Astro.props;
       justify-content: space-between;
       margin: 0px auto;
       padding: 0px var(--padding-md);
+      margin-bottom: var(--gap-12);
     }
   }
 </style>

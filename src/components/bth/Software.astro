@@ -1,30 +1,42 @@
 ---
-const {categoria} = Astro.props;
+const { categoria } = Astro.props;
 ---
-<div>
-  <h2> {categoria.name} </h2>
-  <hr />
-{categoria.software.map((software)=> (
 
-  <div class="software">
-    <img src="/icons/bars.svg" height="24" width="24" alt="..." />
-    <div>
-      <h4>{software.name}</h4>
-      <p>{software.description}</p>
-    </div>
-    <a href={software.download} target="_blank">
-      <img src="/icons/download.svg" alt="" srcset="" height="24" width="24" />
-    </a>
-  </div>
-))}
+<div>
+  <h2>{categoria.name}</h2>
+  <hr />
+  {
+    categoria.software.map((software) => (
+      <div class="software">
+        <img src="/icons/bars.svg" height="24" width="24" alt="..." />
+        <div>
+          <h4>{software.name}</h4>
+          <p>{software.description}</p>
+        </div>
+        <a href={software.download} target="_blank">
+          <img
+            src="/icons/download.svg"
+            alt=""
+            srcset=""
+            height="24"
+            width="24"
+          />
+        </a>
+      </div>
+    ))
+  }
 </div>
 
 <style>
+  div > hr {
+    margin-bottom: var(--gap-8);
+  }
   .software {
     display: grid;
     grid-template-columns: 10% 75% 15%;
     column-gap: var(--gap-12);
     align-items: center;
+    margin-bottom: var(--gap-8);
   }
 
   .software > img {
@@ -55,10 +67,9 @@ const {categoria} = Astro.props;
     margin-bottom: 3px;
   }
 
-
-@media screen and (min-width: 769px) {
-  .software{
-    grid-template-columns: 5% 85% 10%;
+  @media screen and (min-width: 769px) {
+    .software {
+      grid-template-columns: 5% 85% 10%;
+    }
   }
-}
 </style>
