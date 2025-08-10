@@ -25,6 +25,9 @@ quinto:
   - title: "Introducción al lenguaje de programación TypeScript"
     path_file: "/content/quinto/500-introduccion-al-lenguaje-programacion-ts.pdf"
     donwload_name_file: "500-introduccion-al-lenguaje-programacion-ts.pdf"
+  - title: "Array de datos con TypeScript"
+    path_file: "/content/quinto/501-arrays-ts.pdf"
+    donwload_name_file: "501-arrays-ts.pdf"
 sexto:
   - title: "Introducción al lenguaje de programación PHP"
     path_file: "/content/sexto/600-introduccion-al-lenguaje-programacion-php.pdf"

@@ -1,11 +1,13 @@
 ---
 import contents from "@content/bth/contenido.yml";
 import material from "@content/bth/material.yml";
+import nextcloud from "@content/bth/nextcloud.yml";
 
 import BTHLayout from "@layouts/BTHLayout.astro";
 
 import ThemeContent from "@components/bth/ThemeContent.astro";
 import CardMaterial from "@components/profile/CardMaterial.astro";
+import CardNextCloud from "@components/profile/CardNextCloud.astro";
 ---
 
 <BTHLayout title="BTH">
@@ -16,7 +18,11 @@ import CardMaterial from "@components/profile/CardMaterial.astro";
 
     <ThemeContent title="Quinto" contents={contents.quinto} />
 
+    <CardNextCloud title="Quinto - Apuntes de examen" contents={nextcloud.quinto} />
+
     <ThemeContent title="Sexto" contents={contents.sexto} />
+
+    <CardNextCloud title="Sexto - Apuntes de examen" contents={nextcloud.sexto} />
 
     <CardMaterial title="Material de apoyo" contents={material.github} />
   </div>

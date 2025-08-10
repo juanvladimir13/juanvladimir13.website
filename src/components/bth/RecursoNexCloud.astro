@@ -1,0 +1,57 @@
+---
+const {
+  description,
+  path_file,
+  nextcloud,
+  donwload_name_file,
+} = Astro.props;
+---
+
+<div class="container">
+  <p class="description">{description}</p>
+  <div class="source">
+    {
+      (
+        <a href={path_file} target="_blank" download={donwload_name_file}>
+          <img src="/icons/download.svg" height="24" width="24" />
+        </a>
+      )
+    }
+    {
+      (
+        <a href={nextcloud} target="_blank">
+          <img
+            src="https://res.cloudinary.com/juanvladimir13/image/upload/v1712330060/icon/chrome.png"
+            alt="icon"
+          />
+        </a>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .container {
+    padding: 0px 0px 0px var(--padding-sm);
+    color: var(--green-950);
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .description {
+    font-size: var(--fs-16);
+    line-height: var(--lh-100);
+  }
+
+  .source {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+  }
+
+  .source > a > img {
+    width: var(--icon-32);
+  }
+</style>

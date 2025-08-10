@@ -1,0 +1,42 @@
+quinto:
+  - description: "Lenguaje typescript"
+    path_file: "/content/nextcloud/lenguaje-ts.pdf"
+    donwload_name_file: "lenguaje-ts.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/DW9cNnFiZBKmTBg'
+  - description: "Examen de funciones"
+    path_file: "/content/nextcloud/examen-de-funciones-ts.pdf"
+    donwload_name_file: "examen-de-funciones-ts.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/szWGaf3DQYnwyp2'
+  - description: "Examen de estructuras de control if"
+    path_file: "/content/nextcloud/examen-de-estructuras-de-control-if.pdf"
+    donwload_name_file: "examen-de-estructuras-de-control-if.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/eeYJ8F2Yw4zN6kT'
+  - description: "Examen de array de objetos"
+    path_file: "/content/nextcloud/examen-de-estructuras-de-control-if.pdf"
+    donwload_name_file: "examen-de-estructuras-de-control-if.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/eeYJ8F2Yw4zN6kT'
+  - description: "Creacion de archivos y carpetas"
+    path_file: "/content/nextcloud/creacion-de-archivos-y-carpetas.pdf"
+    donwload_name_file: "creacion-de-archivos-y-carpetas.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/o64Frer8QjgAZTs'
+  - description: "Examen de creacion de archivos y carpetas"
+    path_file: "/content/nextcloud/examen-creacion-de-archivos-y-carpetas.pdf"
+    donwload_name_file: "examen-creacion-de-archivos-y-carpetas.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/YwMtCyxPgnR9p5m'
+sexto:
+  - description: "Lenguaje PHP"
+    path_file: "/content/nextcloud/lenguaje-php.pdf"
+    donwload_name_file: "lenguaje-php.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/ZkeRA6A4TKWMHwm'
+  - description: "Examen de funciones"
+    path_file: "/content/nextcloud/examen-de-funciones-php.pdf"
+    donwload_name_file: "examen-de-funciones-php.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/6WZASF2G3KafbXp'
+  - description: "Creacion de archivos y carpetas"
+    path_file: "/content/nextcloud/creacion-de-archivos-y-carpetas.pdf"
+    donwload_name_file: "creacion-de-archivos-y-carpetas.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/o64Frer8QjgAZTs'
+  - description: "Examen de creacion de archivos y carpetas"
+    path_file: "/content/nextcloud/examen-creacion-de-archivos-y-carpetas.pdf"
+    donwload_name_file: "examen-creacion-de-archivos-y-carpetas.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/YwMtCyxPgnR9p5m'
