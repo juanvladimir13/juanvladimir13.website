@@ -12,9 +12,9 @@ quinto:
     donwload_name_file: "examen-de-estructuras-de-control-if.pdf"
     nextcloud: 'https://bthsanjulian.website:8021/index.php/s/eeYJ8F2Yw4zN6kT'
   - description: "Examen de array de objetos"
-    path_file: "/content/nextcloud/examen-de-estructuras-de-control-if.pdf"
-    donwload_name_file: "examen-de-estructuras-de-control-if.pdf"
-    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/eeYJ8F2Yw4zN6kT'
+    path_file: "/content/nextcloud/examen-de-array-de-datos.pdf"
+    donwload_name_file: "examen-de-array-de-datos.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/LgXcoHWyE6RLCTk'
   - description: "Creacion de archivos y carpetas"
     path_file: "/content/nextcloud/creacion-de-archivos-y-carpetas.pdf"
     donwload_name_file: "creacion-de-archivos-y-carpetas.pdf"
@@ -28,6 +28,14 @@ sexto:
     path_file: "/content/nextcloud/lenguaje-php.pdf"
     donwload_name_file: "lenguaje-php.pdf"
     nextcloud: 'https://bthsanjulian.website:8021/index.php/s/ZkeRA6A4TKWMHwm'
+  - description: "Propiedades de CSS"
+    path_file: "/content/nextcloud/propiedades-css.pdf"
+    donwload_name_file: "propiedades-css.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/6MfTWjpAdoCgDFo'
+  - description: "Examen de CSS"
+    path_file: "/content/nextcloud/examen-css.pdf"
+    donwload_name_file: "examen-css.pdf"
+    nextcloud: 'https://bthsanjulian.website:8021/index.php/s/6RrJgN82Pq9e5qP'
   - description: "Examen de funciones"
     path_file: "/content/nextcloud/examen-de-funciones-php.pdf"
     donwload_name_file: "examen-de-funciones-php.pdf"

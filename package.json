@@ -37,10 +37,10 @@
     }
   },
   "dependencies": {
-    "@astrojs/upgrade": "^0.6.2",
     "astro": "^5.12.8"
   },
   "devDependencies": {
-    "@rollup/plugin-yaml": "^4.1.2"
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@astrojs/upgrade": "^0.6.2"
   }
 }
