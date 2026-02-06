@@ -1,16 +1,23 @@
 ---
-const { title, contents } = Astro.props;
+const { title, contents, uuid } = Astro.props;
 ---
+
 <div class="bg-container">
-  <h3 class="sub-title">{title}</h3>
+  <h3 class="sub-title" id={uuid}>{title}</h3>
   <ul>
     {
       contents.map((content) => (
         <li>
           <span>{content.title}</span>
-          <a href={content.path_file} download={content.donwload_name_file}>
-            <img src="/icons/download.svg" height="24" width="24" />
-          </a>
+          {content.path_file || content.donwload_name_file ? (
+            <a href={content.path_file} download={content.donwload_name_file}>
+              <img src="/icons/download.svg" height="24" width="24" />
+            </a>
+          ) : (
+            <a href="javascript:void(0);">
+              <img src="/icons/download.svg" height="24" width="24" />
+            </a>
+          )}
         </li>
       ))
     }

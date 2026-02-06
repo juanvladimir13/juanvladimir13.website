@@ -12,18 +12,44 @@ import CardNextCloud from "@components/profile/CardNextCloud.astro";
 
 <BTHLayout title="BTH">
   <div class="container-fluid">
-    <ThemeContent title="Contenido Base" contents={contents.shared} />
+    <ThemeContent
+      title="Programacion I"
+      contents={contents.programacion}
+      uuid="programacion"
+    />
 
-    <ThemeContent title="Contenido de apoyo" contents={contents.apoyo} />
+    <CardNextCloud
+      title="Programacion I - Apuntes de examen"
+      contents={nextcloud.programacion}
+      uuid="programacion"
+    />
 
-    <ThemeContent title="Quinto" contents={contents.quinto} />
+    <ThemeContent
+      title="Web Design"
+      contents={contents.webdesign}
+      uuid="webdesign"
+    />
 
-    <CardNextCloud title="Quinto - Apuntes de examen" contents={nextcloud.quinto} />
+    <CardNextCloud
+      title="Web Design - Apuntes de examen"
+      contents={nextcloud.webdesign}
+    />
 
-    <ThemeContent title="Sexto" contents={contents.sexto} />
+    <ThemeContent
+      title="Base de Datos"
+      contents={contents.database}
+      uuid="database"
+    />
 
-    <CardNextCloud title="Sexto - Apuntes de examen" contents={nextcloud.sexto} />
-
-    <CardMaterial title="Material de apoyo" contents={material.github} />
+    <ThemeContent
+      title="Contenido de apoyo"
+      contents={contents.apoyo}
+      uuid="apoyo"
+    />
+    <CardMaterial
+      title="Material de apoyo"
+      contents={material.github}
+      uuid="github"
+    />
   </div>
 </BTHLayout>

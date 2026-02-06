@@ -1,7 +1,7 @@
 apps:
-    - categoria:
-      name: Programación
-      software:
+  - categoria:
+    name: Programación
+    software:
       - name: Bun
         description: "Develop, test, run, and bundle JavaScript & TypeScript projects—all with Bun, runtime & toolkit designed for speed"
         download: "https://bun.sh/docs/installation"
@@ -14,13 +14,9 @@ apps:
         description: "Herramienta para asistir a un estudiante en sus primeros pasos"
         download: "https://pseint.sourceforge.net/index.php?page=descargas.php"
         img: ""
-      - name: Lazarus
-        description: "IDE for Rapid Application Development"
-        download: "https://www.lazarus-ide.org/index.php?page=downloads"
-        img: ""
-    - categoria:
-      name: Desarrollo web
-      software:
+  - categoria:
+    name: Desarrollo web
+    software:
       - name: Visual Studio Code
         description: "Code Editing. Redefined"
         download: "https://code.visualstudio.com/download"
@@ -53,9 +49,9 @@ apps:
         description: "Distributed version control system"
         download: "https://git-scm.com/download/win"
         img: ""
-    - categoria:
-      name: Base de datos
-      software:
+  - categoria:
+    name: Base de datos
+    software:
       - name: SQLite
         description: "SQLite is the most used database engine in the world"
         download: "https://www.sqlite.org/download.html"
@@ -68,9 +64,9 @@ apps:
         description: "Modeller is a Unified Modelling Language (UML)"
         download: "https://uml.sourceforge.io/installation.php#install-windows"
         img: ""
-    - categoria:
-      name: Diseño gráfico
-      software:
+  - categoria:
+    name: Diseño gráfico
+    software:
       - name: GIMP
         description: "Open Source Image Editor"
         download: "https://www.gimp.org/downloads/"
@@ -79,9 +75,9 @@ apps:
         description: "A powerful, free design tool"
         download: "https://inkscape.org/release"
         img: ""
-    - categoria:
-      name: Editores de texto
-      software:
+  - categoria:
+    name: Editores de texto
+    software:
       - name: Notepad++
         description: "Is a free source code editor"
         download: "https://notepad-plus-plus.org/downloads/"
