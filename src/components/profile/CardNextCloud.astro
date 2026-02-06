@@ -5,7 +5,9 @@ const { title, contents, uuid } = Astro.props;
 ---
 
 <div class="bg-container">
-  <h3 class="sub-title" style="margin-bottom: 5px;" id={uuid}>{title}</h3>
+  <h3 class="sub-title" style="margin-bottom: 5px;" id={`nextcloud-${uuid}`}>
+    {title}
+  </h3>
   {
     contents.map(
       ({

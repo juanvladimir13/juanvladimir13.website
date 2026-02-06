@@ -1,18 +1,17 @@
 ---
-const {
-  description,
-  path_file,
-  nextcloud,
-  donwload_name_file,
-} = Astro.props;
+const { description, path_file, nextcloud, donwload_name_file } = Astro.props;
 ---
 
 <div class="container">
   <p class="description">{description}</p>
   <div class="source">
     {
-      (
+      path_file && donwload_name_file ? (
         <a href={path_file} target="_blank" download={donwload_name_file}>
+          <img src="/icons/download.svg" height="24" width="24" />
+        </a>
+      ) : (
+        <a href="javascript:void(0);">
           <img src="/icons/download.svg" height="24" width="24" />
         </a>
       )

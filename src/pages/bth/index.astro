@@ -33,6 +33,7 @@ import CardNextCloud from "@components/profile/CardNextCloud.astro";
     <CardNextCloud
       title="Web Design - Apuntes de examen"
       contents={nextcloud.webdesign}
+      uuid="webdesign"
     />
 
     <ThemeContent
@@ -41,11 +42,18 @@ import CardNextCloud from "@components/profile/CardNextCloud.astro";
       uuid="database"
     />
 
+    <CardNextCloud
+      title="Base de Datos - Apuntes de examen"
+      contents={nextcloud.database}
+      uuid="database"
+    />
+
     <ThemeContent
       title="Contenido de apoyo"
       contents={contents.apoyo}
       uuid="apoyo"
     />
+
     <CardMaterial
       title="Material de apoyo"
       contents={material.github}
