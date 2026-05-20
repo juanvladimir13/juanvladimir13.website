@@ -1,0 +1,32 @@
+---
+import contents from "@content/bth/contenido.yml";
+import recurso from "@content/bth/recurso.yml";
+
+import BTHLayout from "@layouts/BTHLayout.astro";
+
+import ThemeContent from "@components/bth/ThemeContent.astro";
+import CardMaterial from "@components/profile/CardMaterial.astro";
+import CardNextCloud from "@components/profile/CardNextCloud.astro";
+---
+
+<BTHLayout title="BTH">
+  <div class="container-fluid">
+    <CardNextCloud
+    title="Software"
+    contents={recurso.app_emulators}
+    slug="software"
+    />
+
+    <ThemeContent
+      title="Contenidos complementarios"
+      contents={contents.apoyo}
+      slug="complementario"
+    />
+
+    <CardMaterial
+    title="Estructura de proyectos"
+    contents={recurso.github}
+    slug="projects"
+    />
+  </div>
+</BTHLayout>

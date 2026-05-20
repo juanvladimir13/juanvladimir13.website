@@ -1,0 +1,60 @@
+---
+
+---
+<nav>
+  <span class="badge color-programacion">
+    <a href="/bth/programacion">💻 Programacion</a>
+  </span>
+  <span class="badge color-database">
+    <a href="/bth/database">💾 Base de datos</a>
+  </span>
+  <span class="badge color-webdesign">
+    <a href="/bth/webdesign">🌐 Web design</a>
+  </span>
+  <span class="badge color-material">
+    <a href="/bth/recursos">🛠️ Recursos</a>
+  </span>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap-8);
+    text-align: center;
+    margin: 10px 0px;
+    print-color-adjust: exact;
+  }
+
+  .badge {
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-500);
+    line-height: var(--lh-100);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .badge > a {
+    text-decoration: none;
+    color: var(--green-950);
+  }
+
+  .color-programacion {
+    background-color: #d7f3f7;
+  }
+
+  .color-database {
+    background-color: #ebe9e9;
+  }
+
+  .color-webdesign {
+    background-color: #fdfbdc;
+  }
+
+  .color-material {
+    background-color: var(--green-100);
+  }
+</style>

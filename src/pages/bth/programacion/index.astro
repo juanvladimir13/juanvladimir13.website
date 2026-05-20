@@ -1,0 +1,30 @@
+---
+import contents from "@content/bth/contenido.yml";
+
+import BTHLayout from "@layouts/BTHLayout.astro";
+
+import ThemeContent from "@components/bth/ThemeContent.astro";
+import CardNextCloud from "@components/profile/CardNextCloud.astro";
+---
+
+<BTHLayout title="BTH">
+  <div class="container-fluid">
+    <ThemeContent
+      title="Avance de contenidos"
+      contents={contents.programacion}
+      slug="avance"
+    />
+
+    <CardNextCloud
+      title="Material de apoyo"
+      contents={contents.programacion_material}
+      slug="material"
+    />
+
+    <CardNextCloud
+      title="Modelos de examen"
+      contents={contents.programacion_test}
+      slug="modelo-examen"
+    />
+  </div>
+</BTHLayout>

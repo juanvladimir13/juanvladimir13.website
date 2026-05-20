@@ -1,11 +1,11 @@
 ---
 import RecursoNexCloud from "@components/bth/RecursoNexCloud.astro";
 
-const { title, contents, uuid } = Astro.props;
+const { title, contents, slug } = Astro.props;
 ---
 
 <div class="bg-container">
-  <h3 class="sub-title" style="margin-bottom: 5px;" id={`nextcloud-${uuid}`}>
+  <h3 class="sub-title" style="margin-bottom: 5px;" id={slug}>
     {title}
   </h3>
   {

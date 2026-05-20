@@ -1,63 +1,21 @@
 ---
-import contents from "@content/bth/contenido.yml";
-import material from "@content/bth/material.yml";
-import nextcloud from "@content/bth/nextcloud.yml";
-
 import BTHLayout from "@layouts/BTHLayout.astro";
-
-import ThemeContent from "@components/bth/ThemeContent.astro";
-import CardMaterial from "@components/profile/CardMaterial.astro";
-import CardNextCloud from "@components/profile/CardNextCloud.astro";
 ---
 
 <BTHLayout title="BTH">
   <div class="container-fluid">
-    <ThemeContent
-      title="Programacion I"
-      contents={contents.programacion}
-      uuid="programacion"
-    />
-
-    <CardNextCloud
-      title="Programacion I - Apuntes de examen"
-      contents={nextcloud.programacion}
-      uuid="programacion"
-    />
-
-    <ThemeContent
-      title="Web Design"
-      contents={contents.webdesign}
-      uuid="webdesign"
-    />
-
-    <CardNextCloud
-      title="Web Design - Apuntes de examen"
-      contents={nextcloud.webdesign}
-      uuid="webdesign"
-    />
-
-    <ThemeContent
-      title="Base de Datos"
-      contents={contents.database}
-      uuid="database"
-    />
-
-    <CardNextCloud
-      title="Base de Datos - Apuntes de examen"
-      contents={nextcloud.database}
-      uuid="database"
-    />
-
-    <ThemeContent
-      title="Contenido de apoyo"
-      contents={contents.apoyo}
-      uuid="apoyo"
-    />
-
-    <CardMaterial
-      title="Material de apoyo"
-      contents={material.github}
-      uuid="github"
-    />
+    <p>Material <strong>educativo de apoyo</strong> para el <i>Bachillerato Tecnico Humanistico</i> de la especialidad de <strong>Sistemas Informaticos</strong>💻</p>
   </div>
+   
 </BTHLayout>
+
+<style>
+  p {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--green-900);
+    font-size: var(--fs-20);
+    line-height: var(--lh-100);
+    font-weight: 300;
+  }
+</style>

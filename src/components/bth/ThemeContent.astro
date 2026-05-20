@@ -1,13 +1,13 @@
 ---
-const { title, contents, uuid } = Astro.props;
+const { title, contents, slug } = Astro.props;
 ---
 
 <div class="bg-container">
-  <h3 class="sub-title" id={uuid}>{title}</h3>
+  <h3 class="sub-title" id={slug}>{title}</h3>
   <ul>
     {
       contents.map((content) => (
-        <li>
+        <li id={content.slug}>
           <span>{content.title}</span>
           {content.path_file || content.donwload_name_file ? (
             <a href={content.path_file} download={content.donwload_name_file}>

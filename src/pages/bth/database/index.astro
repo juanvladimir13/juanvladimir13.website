@@ -1,0 +1,38 @@
+---
+import contents from "@content/bth/contenido.yml";
+import recurso from "@content/bth/recurso.yml";
+
+import BTHLayout from "@layouts/BTHLayout.astro";
+
+import ThemeContent from "@components/bth/ThemeContent.astro";
+import CardMaterial from "@components/profile/CardMaterial.astro";
+import CardNextCloud from "@components/profile/CardNextCloud.astro";
+---
+
+<BTHLayout title="BTH">
+  <div class="container-fluid">
+    <ThemeContent
+      title="Avance de contenidos"
+      contents={contents.database}
+      slug="avance"
+    />
+
+    <CardNextCloud
+      title="Material de apoyo"
+      contents={contents.database_material}
+      slug="material"
+    />
+
+    <CardNextCloud
+      title="Modelos de examen"
+      contents={contents.database_test}
+      slug="test"
+    />
+
+    <ThemeContent
+      title="Ejemplos de BD sqlite"
+      contents={recurso.dbdemo}
+      uuid="dbdemo"
+    />
+  </div>
+</BTHLayout>
