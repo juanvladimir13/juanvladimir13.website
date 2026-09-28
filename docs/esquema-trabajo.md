@@ -15,10 +15,10 @@
 %%{init: {"themeCSS": "a { text-decoration: none !important; }"}}%%
 flowchart LR
     %% Nivel 0: Raíz Central
-    Root(("👤 juanvladimir13<br/><b>Ecosistema</b>"))
+    Root(("<span style='display: inline-block;'>👤 juanvladimir13<br/><b>Ecosistema</b></span>"))
 
     %% Nivel 1: Bifurcación Principal
-    Root --> BTH["🌐 Portal BTH (/bth/)<br/><i>Material Educativo</i>"]
+    Root --> BTH["<span style='display: inline-block;'>🌐 Portal BTH (/bth/)<br/><i>Material Educativo</i></span>"]
     Root --> Serv["🔗 Plataformas y Servicios<br/><i>Ecosistema y Nube</i>"]
 
     %% Rama BTH
@@ -26,11 +26,11 @@ flowchart LR
     BTH --> Practica["🎯 Práctica y Evaluación"]
 
     %% Nodos Directos de Avance de Contenidos
-    Avance --> Prog["💻 Programación<br/><i>5 Temas y TypeScript</i>"]
-    Avance --> Web["🌐 Web Design<br/><i>HTML, CSS, Astro, PHP</i>"]
-    Avance --> BD["💾 Base de Datos<br/><i>UML, SGBD, SQLite</i>"]
-    Avance --> Rec["🛠️ Recursos BTH<br/><i>SO, Herramientas, API</i>"]
-    Avance --> Soft["⚙️ Software<br/><i>Herramientas y Entornos</i>"]
+    Avance --> Prog["<span style='display: inline-block;'>💻 Programación<br/><i>5 Temas y TypeScript</i></span>"]
+    Avance --> Web["<span style='display: inline-block;'>🌐 Web Design<br/><i>HTML, CSS, Astro, PHP</i></span>"]
+    Avance --> BD["<span style='display: inline-block;'>💾 Base de Datos<br/><i>UML, SGBD, SQLite</i></span>"]
+    Avance --> Rec["<span style='display: inline-block;'>🛠️ Recursos BTH<br/><i>SO, Herramientas, API</i></span>"]
+    Avance --> Soft["<span style='display: inline-block;'>⚙️ Software<br/><i>Herramientas y Entornos</i></span>"]
 
     %% Sub-bifurcación Práctica y Evaluación con viñetas a la izquierda y texto normal
     Practica --> Examenes["<b>📝 Modelos de Examen</b><div style='text-align: left; font-weight: normal;'>• Pruebas de Código y SQL</div>"]
@@ -41,17 +41,17 @@ flowchart LR
     Serv --> Infra["⚙️ Infraestructura y Nube"]
 
     %% Sub-bifurcación Estudio
-    Estudio --> Apuntes["📝 Apuntes Web<br/>• Codelabs y Documentación"]
-    Estudio --> YouTube["🎥 YouTube Playlists<br/>• Clases y Tutoriales"]
+    Estudio --> Apuntes["<span style='display: inline-block;'>📝 Apuntes Web<br/>• Codelabs y Documentación</span>"]
+    Estudio --> YouTube["<span style='display: inline-block;'>🎥 YouTube Playlists<br/>• Clases y Tutoriales</span>"]
 
     %% Nodos Hijos con viñetas a la izquierda y texto normal
-    Apuntes --> ApuntesDetalle["<b>📚 Contenidos del Sitio de Notas</b><div style='text-align: left; font-weight: normal;'>• 💻 Programación: Algoritmos y solución<br/>• 🌐 Web design: Sitios estáticos y dinámicos<br/>• 💾 Base de datos: Configuración web/móvil<br/>• 🛠️ Herramientas: IA, plugins y frameworks</div>"]
-    YouTube --> YTList["<b>🎬 10 Playlists de Lecciones</b><div style='text-align: left; font-weight: normal;'>• Programación I<br/>• Lenguajes de programación<br/>• Base de datos<br/>• Web Design (Principal)<br/>• Flexbox y CSS Grid<br/>• Desarrollo web con PHP<br/>• Proyecto web con PHP<br/>• Instalación de programas 5to y 6to<br/>• Administración de servidores Linux<br/>• AI en desarrollo de software</div>"]
+    Apuntes --> ApuntesDetalle["<span style='display: inline-block;'><b>📚 Contenidos del Sitio de Notas</b><div style='text-align: left; font-weight: normal;'>• 💻 Programación: Algoritmos y solución<br/>• 🌐 Web design: Sitios estáticos y dinámicos<br/>• 💾 Base de datos: Configuración web/móvil<br/>• 🛠️ Herramientas: IA, plugins y frameworks</div></span>"]
+    YouTube --> YTList["<span style='display: inline-block;'><b>🎬 10 Playlists de Lecciones</b><div style='text-align: left; font-weight: normal;'>• Programación I<br/>• Lenguajes de programación<br/>• Base de datos<br/>• Web Design (Principal)<br/>• Flexbox y CSS Grid<br/>• Desarrollo web con PHP<br/>• Proyecto web con PHP<br/>• Instalación de programas 5to y 6to<br/>• Administración de servidores Linux<br/>• AI en desarrollo de software</div></span>"]
 
     %% Nodos Directos de Infraestructura y Nube
-    Infra --> GitHub["🐙 GitHub Institucional<br/>• Repositorios de Código"]
-    Infra --> NextCloud["☁️ NextCloud Servidor<br/>• Almacenamiento Cloud BTH"]
-    Infra --> LimeSurvey["📋 LimeSurvey Sistema<br/>• Encuestas y Diagnósticos"]
+    Infra --> GitHub["<span style='display: inline-block;'>🐙 GitHub Institucional<br/>• Repositorios de Código</span>"]
+    Infra --> NextCloud["<span style='display: inline-block;'>☁️ NextCloud Servidor<br/>• Almacenamiento Cloud BTH</span>"]
+    Infra --> LimeSurvey["<span style='display: inline-block;'>📋 LimeSurvey Sistema<br/>• Encuestas y Diagnósticos</span>"]
 
     %% Directivas de Navegación Interactiva (Click)
     click Root "https://juanvladimir13.web.app" "Ir al Sitio Web de Juan Vladimir" _blank
