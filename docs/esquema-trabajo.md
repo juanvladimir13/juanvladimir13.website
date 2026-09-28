@@ -1,3 +1,9 @@
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
+
 # Esquema de trabajo
 *Sitio Web:* [https://juanvladimir13.web.app](https://juanvladimir13.web.app/) | *Portal BTH:* [https://juanvladimir13.web.app/bth/](https://juanvladimir13.web.app/bth/)
 
@@ -6,6 +12,7 @@
 ## Flujo de trabajo del Ecosistema
 
 ```mermaid
+%%{init: {"themeCSS": "a { text-decoration: none !important; }"}}%%
 flowchart LR
     %% Nivel 0: Raíz Central
     Root(("👤 juanvladimir13<br/><b>Ecosistema</b>"))
